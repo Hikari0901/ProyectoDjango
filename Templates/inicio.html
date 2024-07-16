@@ -40,27 +40,22 @@
     <div class="grid-x grid-margin-x align-center">
       <div class="cell large-4 card" style="width: 350px; margin-top: 10px;">
         <div class="card-divider">
-          
-          {% for p in paginas %}
-          Ronnald Merizalde{{p.nombre}}
+          Ronnald Merizalde
         </div>
-        
         <img src="{%static 'img/perfil.jpg'%}">
         <div class="card-section">
-          <h5>Desarrollador Web Django{{p.cargo}}</h5>
+          <h5>Desarrollador Web Django</h5>
           <p>Nombres completos:</p>
-          <p>Ronnald Mauricio Merizalde Delgado{{p.nombresC}} </p>
-          <p>Edad: 20{{p.edad}} Años</p>
+          <p>Ronnald Mauricio Merizalde Delgado</p>
+          <p>Edad: 20 Años</p>
           <p>Destrezas:</p>
           <ul>
-            {% for d in p.destrezas.all %}
               <li>Programacion con Python
                 Desarrollo web con Python + Django
                 Chef Profesional
                 Nivel de ingles A1
                 Diseño Grafico
-                  {{d.destreza}} </li>
-                
+            </li>
             {% endfor %}
           </ul>
         </div>
