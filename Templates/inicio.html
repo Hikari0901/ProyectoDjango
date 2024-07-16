@@ -42,19 +42,24 @@
         <div class="card-divider">
           
           {% for p in paginas %}
-          {{p.nombre}}
+          Ronnald Merizalde{{p.nombre}}
         </div>
         
         <img src="{%static 'img/perfil.jpg'%}">
         <div class="card-section">
-          <h5>{{p.cargo}}</h5>
+          <h5>Desarrollador Web Django{{p.cargo}}</h5>
           <p>Nombres completos:</p>
-          <p>{{p.nombresC}} </p>
-          <p>Edad: {{p.edad}} Años</p>
+          <p>Ronnald Mauricio Merizalde Delgado{{p.nombresC}} </p>
+          <p>Edad: 20{{p.edad}} Años</p>
           <p>Destrezas:</p>
           <ul>
             {% for d in p.destrezas.all %}
-              <li>{{d.destreza}} </li>
+              <li>Programacion con Python
+                Desarrollo web con Python + Django
+                Chef Profesional
+                Nivel de ingles A1
+                Diseño Grafico
+                  {{d.destreza}} </li>
                 
             {% endfor %}
           </ul>
